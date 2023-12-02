@@ -6,4 +6,8 @@
         <item name="android:textColor">#FFFFFF</item>
     </style>
 
+    <style name="User">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
 </resources>

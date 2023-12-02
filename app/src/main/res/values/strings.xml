@@ -11,4 +11,6 @@
     <string name="login_with">Login With</string>
     <string name="login">Login</string>
     <string name="mengumpulka">Mengumpulkan sampah menghasilkan uang.</string>
+    <string name="userprofile">UserProfile</string>
+    <string name="Username">Username</string>
 </resources>

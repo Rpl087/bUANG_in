@@ -1,34 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".home_main">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:background="@drawable/login_page"
-            android:layout_gravity="top"
-            tools:ignore="MissingConstraints">
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="top"
+        android:background="#0F8305"
+        android:gravity="top"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="25dp"
-                android:src="@drawable/mini_user"
-                android:layout_gravity="left">
+        <ImageView
+            android:id="@+id/UserProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mini_user"
+            android:contentDescription="@string/userprofile"
+            android:gravity="left"
+            android:layout_margin="-40dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:padding="50dp"
+            app:layout_constraintEnd_ToEnd="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-                <TextView
-                    android:layout_width="500dp"
-                    android:layout_height="wrap_content"
-                    android:colorTint="@color/black"
-                    android:text="Username"
-                    android:textSize="15sp"
-                    tools:ignore="MissingConstraints">
+        <TextView
+            android:id="@+id/Username_Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:gravity="right"
+            android:text="@string/Username"
+            android:textAppearance="@style/User" />
 
-                </TextView>
-            </ImageView>
-
-        </LinearLayout>
-
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
