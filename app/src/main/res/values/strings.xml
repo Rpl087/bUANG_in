@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">bUANG-in</string>
+    <string name="todo">TODO</string>
+    <string name="logo_buangin">Logo_bUANGin</string>
+    <string name="username">Username</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="login_with_google">Login With Google</string>
+    <string name="login_with">Login With</string>
+    <string name="login">Login</string>
+    <string name="mengumpulka">Mengumpulkan sampah menghasilkan uang.</string>
+</resources>

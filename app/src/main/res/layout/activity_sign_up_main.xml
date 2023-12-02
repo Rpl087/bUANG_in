@@ -1,0 +1,105 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/activity_splash_screen_scene"
+    tools:context=".MainActivity">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/login_page"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="UselessParent">
+
+            <ImageView
+                android:id="@+id/logoImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:layout_margin="50dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:contentDescription="@string/logo_buangin"
+                android:src="@drawable/logo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/mengumpulka"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="-0dp"
+                android:gravity="center"
+                android:layout_marginTop="-80dp"
+                android:text="@string/mengumpulka"
+                android:textAppearance="@style/mengumpulka" />
+
+            <EditText
+                android:id="@+id/usernameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="50dp"
+                android:autofillHints="center"
+                android:hint="@string/username"
+                android:inputType="text"
+                android:background="@drawable/edittext_rectangle"
+                android:textColor="@color/black"
+                android:scaleType="fitXY"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:autofillHints="center"
+                android:hint="@string/email"
+                android:background="@drawable/edittext_rectangle"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/black"
+                tools:ignore="DuplicateIds" />
+
+
+            <EditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:autofillHints="center"
+                android:background="@drawable/edittext_rectangle"
+                android:hint="@string/password"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/confirmPasswordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:autofillHints="center"
+                android:background="@drawable/edittext_rectangle"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:duplicateParentState="true"
+                />
+
+            <Button
+                android:id="@+id/signupButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/edittext_rectangle"
+                android:clickable="true"
+                android:text="@string/sign_up"
+                android:textColor="@drawable/login_page"
+                android:focusable="true" />
+    </LinearLayout>
+
+</RelativeLayout>
