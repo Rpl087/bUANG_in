@@ -3,8 +3,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     app:layoutDescription="@xml/activity_splash_screen_scene"
     tools:context="com.example.bUANG_in.SignUp_activity_main">
 
@@ -115,11 +115,13 @@
                 android:layout_marginLeft="125dp"
                 android:layout_marginTop="30dp"
                 android:layout_marginRight="125dp"
-                android:background="@color/white"
+                android:text="@string/sign_up"
                 android:clickable="true"
                 android:focusable="true"
-                android:textAppearance="@style/center_button"
-                android:textColor="@drawable/login_page" />
+                android:textColor="@color/black"
+                android:textAppearance="@style/button_sign_up"
+                android:background="@color/white"
+                />
     </LinearLayout>
 
 </RelativeLayout>

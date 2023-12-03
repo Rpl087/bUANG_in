@@ -10,8 +10,8 @@
 
     <LinearLayout
         android:id="@+id/login_Layout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:background="@drawable/login_page"
@@ -24,7 +24,7 @@
 
         <ImageView
             android:id="@+id/logoImageView"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="350dp"
             android:layout_marginStart="0dp"
             android:layout_marginEnd="-0dp"
@@ -34,26 +34,37 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
+        <TextView
+            android:id="@+id/mengumpulka"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="-0dp"
+            android:gravity="center"
+            android:layout_marginTop="-80dp"
+            android:text="@string/mengumpulka"
+            android:textAppearance="@style/mengumpulka"
+            />
+
         <Button
             android:id="@+id/loginwithgoogle"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
             android:clickable="true"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:textAppearance="@style/center_button"
-            android:text="@string/login_with_google"
-            android:textColor="@color/black"
             android:focusable="true"
-            />
-
+            android:padding="2dp"
+            android:src="@style/logo_google_image"
+            android:text="@string/login_with_google"
+            android:textColor="@color/black" />
 
         <EditText
             android:id="@+id/usernameEditText"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:layout_marginTop="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
             android:autofillHints="center"
             android:hint="@string/username"
             android:inputType="text"
@@ -68,7 +79,7 @@
         <EditText
             android:id="@+id/passwordEditText"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:autofillHints="center"
             android:hint="@string/password"
@@ -81,17 +92,21 @@
             android:gravity="center"
             />
 
-
         <Button
             android:id="@+id/login"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:background="#469723"
+            android:background="@drawable/edittext_login"
             android:clickable="true"
+            android:padding="15dp"
             android:text="@string/login"
-            android:textColor="#FFFFFF"
-            android:focusable="true" />
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginRight="125dp"
+            android:focusable="true"
+            android:hint="@string/login"
+            android:textColor="@color/black"
+            />
     </LinearLayout>
 
 </RelativeLayout>

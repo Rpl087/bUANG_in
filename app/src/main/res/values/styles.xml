@@ -2,12 +2,37 @@
 <resources>
     <!-- styles.xml -->
     <style name="mengumpulka">
-        <item name="android:textSize">11sp</item>
+        <item name="android:textSize">17sp</item>
         <item name="android:textColor">#FFFFFF</item>
     </style>
 
     <style name="User">
         <item name="android:textSize">10sp</item>
         <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="center_teks">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="button_sign_up">
+        <item name="android:text">Sign Up</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:color">#7ED957</item>
+        <item name="android:height">6dp</item>
+    </style>
+    <style name="button_login">
+        <item name="android:text">Login</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:color">#7ED957</item>
+        <item name="android:height">12dp</item>
+    </style>
+    <style name="button_login_with">
+        <item name="android:textSize">19sp</item>
+        <item name="android:color">#7ED957</item>
+        <item name="android:height">6dp</item>
+    </style>
+    <style name="logo_google_image">
+        <item name="android:gravity">center</item>
     </style>
 </resources>

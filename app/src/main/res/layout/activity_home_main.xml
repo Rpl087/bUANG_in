@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".home_main">
+    tools:context="com.example.bUANG_in.home_main">
 
     <LinearLayout
         android:id="@+id/linearLayout2"
@@ -17,28 +17,29 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints">
 
-        <ImageView
-            android:id="@+id/UserProfile"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/mini_user"
-            android:contentDescription="@string/userprofile"
-            android:gravity="left"
-            android:layout_margin="-40dp"
-            android:layout_marginStart="50dp"
-            android:layout_marginEnd="50dp"
-            android:padding="50dp"
-            app:layout_constraintEnd_ToEnd="parent"
-            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/Username_Text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="50dp"
-            android:gravity="right"
+            android:gravity="start"
             android:text="@string/Username"
             android:textAppearance="@style/User" />
+
+        <ImageView
+            android:id="@+id/UserProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mini_user"
+            android:contentDescription="@string/userprofile"
+            android:layout_marginTop="100dp"
+            android:layout_margin="50dp"
+            android:padding="0dp"
+            app:layout_ConstraintStart="parent"
+            app:layout_constraintEnd_ToEnd="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
