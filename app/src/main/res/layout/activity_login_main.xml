@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -5,12 +6,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layoutDescription="@xml/activity_splash_screen_scene"
-    tools:context=".MainActivity">
+    tools:context="com.example.bUANG_in.login_ActivityMain">
 
     <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:id="@+id/login_Layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:background="@drawable/login_page"
@@ -18,7 +19,8 @@
         android:orientation="vertical"
         android:padding="5dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UselessParent">
 
         <ImageView
             android:id="@+id/logoImageView"
@@ -37,26 +39,15 @@
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:layout_marginTop="15dp"
-            android:padding="0dp"
-            android:background="@color/white"
             android:clickable="true"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textAppearance="@style/center_button"
             android:text="@string/login_with_google"
             android:textColor="@color/black"
-            android:focusable="true" />
+            android:focusable="true"
+            />
 
-        <Button
-            android:id="@+id/loginwith"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:layout_marginTop="15dp"
-            android:padding="0dp"
-            android:background="@color/white"
-            android:clickable="true"
-            android:text="@string/login_with"
-            android:textColor="@color/black"
-            android:focusable="true">
-
-        </Button>
 
         <EditText
             android:id="@+id/usernameEditText"
@@ -68,7 +59,11 @@
             android:inputType="text"
             android:background="@drawable/edittext_rectangle"
             android:textColor="@color/black"
-            android:scaleType="fitXY"/>
+            android:layout_marginLeft="85dp"
+            android:layout_marginRight="85dp"
+            android:textAppearance="@style/center_teks"
+            android:gravity="center"
+            />
 
         <EditText
             android:id="@+id/passwordEditText"
@@ -76,15 +71,19 @@
             android:layout_height="30dp"
             android:layout_marginTop="10dp"
             android:autofillHints="center"
-            android:background="@color/white"
             android:hint="@string/password"
             android:inputType="textPassword"
+            android:background="@drawable/edittext_rectangle"
             android:textColor="@color/black"
-            android:scaleType="fitXY"/>
+            android:layout_marginLeft="85dp"
+            android:layout_marginRight="85dp"
+            android:textAppearance="@style/center_teks"
+            android:gravity="center"
+            />
 
 
         <Button
-            android:id="@+id/signupButton"
+            android:id="@+id/login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
@@ -92,7 +91,6 @@
             android:clickable="true"
             android:text="@string/login"
             android:textColor="#FFFFFF"
-
             android:focusable="true" />
     </LinearLayout>
 

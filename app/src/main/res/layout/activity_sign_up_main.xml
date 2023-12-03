@@ -57,7 +57,10 @@
                 android:inputType="text"
                 android:background="@drawable/edittext_rectangle"
                 android:textColor="@color/black"
-                android:scaleType="fitXY"/>
+                android:scaleType="fitXY"
+                android:layout_marginLeft="55dp"
+                android:layout_marginRight="55dp"
+                />
 
             <EditText
                 android:id="@+id/email"
@@ -70,7 +73,9 @@
                 android:textAppearance="@style/center_teks"
                 android:background="@drawable/edittext_rectangle"
                 android:inputType="textEmailAddress"
-                tools:ignore="DuplicateIds" />
+                android:layout_marginLeft="55dp"
+                android:layout_marginRight="55dp"
+                />
 
 
             <EditText
@@ -83,12 +88,15 @@
                 android:textAppearance="@style/center_teks"
                 android:background="@drawable/edittext_rectangle"
                 android:hint="@string/password"
-                android:inputType="textPassword" />
+                android:inputType="textPassword"
+                android:layout_marginLeft="55dp"
+                android:layout_marginRight="55dp"
+                />
 
             <EditText
                 android:id="@+id/confirmPasswordEditText"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:autofillHints="center"
                 android:background="@drawable/edittext_rectangle"
@@ -96,18 +104,22 @@
                 android:textAppearance="@style/center_teks"
                 android:gravity="center"
                 android:inputType="textPassword"
+                android:layout_marginLeft="55dp"
+                android:layout_marginRight="55dp"
                 />
 
             <Button
                 android:id="@+id/signupButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="50dp"
-                android:background="@drawable/edittext_rectangle"
+                android:layout_marginLeft="125dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="125dp"
+                android:background="@color/white"
                 android:clickable="true"
-                android:text="@string/sign_up"
-                android:textColor="@drawable/login_page"
-                android:focusable="true" />
+                android:focusable="true"
+                android:textAppearance="@style/center_button"
+                android:textColor="@drawable/login_page" />
     </LinearLayout>
 
 </RelativeLayout>
