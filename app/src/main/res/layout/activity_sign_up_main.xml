@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -5,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layoutDescription="@xml/activity_splash_screen_scene"
-    tools:context=".MainActivity">
+    tools:context="com.example.bUANG_in.SignUp_activity_main">
 
         <LinearLayout
             android:id="@+id/linearLayout"
@@ -36,7 +37,7 @@
             <TextView
                 android:id="@+id/mengumpulka"
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="0dp"
                 android:layout_marginEnd="-0dp"
                 android:gravity="center"
@@ -47,33 +48,39 @@
             <EditText
                 android:id="@+id/usernameEditText"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="50dp"
                 android:autofillHints="center"
                 android:hint="@string/username"
+                android:gravity="center"
+                android:textAppearance="@style/center_teks"
                 android:inputType="text"
                 android:background="@drawable/edittext_rectangle"
                 android:textColor="@color/black"
                 android:scaleType="fitXY"/>
 
             <EditText
+                android:id="@+id/email"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:autofillHints="center"
                 android:hint="@string/email"
+                android:gravity="center"
+                android:textAppearance="@style/center_teks"
                 android:background="@drawable/edittext_rectangle"
                 android:inputType="textEmailAddress"
-                android:textColor="@color/black"
                 tools:ignore="DuplicateIds" />
 
 
             <EditText
                 android:id="@+id/passwordEditText"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:autofillHints="center"
+                android:gravity="center"
+                android:textAppearance="@style/center_teks"
                 android:background="@drawable/edittext_rectangle"
                 android:hint="@string/password"
                 android:inputType="textPassword" />
@@ -85,9 +92,10 @@
                 android:layout_marginTop="10dp"
                 android:autofillHints="center"
                 android:background="@drawable/edittext_rectangle"
-                android:hint="@string/password"
+                android:hint="@string/confirm_password"
+                android:textAppearance="@style/center_teks"
+                android:gravity="center"
                 android:inputType="textPassword"
-                android:duplicateParentState="true"
                 />
 
             <Button
